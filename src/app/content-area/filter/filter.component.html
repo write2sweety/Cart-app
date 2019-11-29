@@ -1,0 +1,19 @@
+<div class="d-none d-sm-none d-xs-none d-md-block d-lg-block">
+    <div class="form-group">
+        <label for="formControlRange">
+            <h5>Filter</h5>
+        </label>
+        <ng5-slider [(value)]="minVal" [(highValue)]="maxVal" [options]="options"></ng5-slider>
+    </div>
+    <button type="button" class="btn btn-primary add-to-cart-button" (click)="onApplyPriceFilter()">Apply</button>
+</div>
+<div class="d-block d-sm-block d-xs-block d-md-none d-lg-none">
+
+    <label for="formControlRange">
+        <span class="glyphicon glyphicon-glass"></span>
+        <h5>Filter</h5>
+    </label>
+
+
+
+</div>

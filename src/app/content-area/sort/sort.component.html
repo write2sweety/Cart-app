@@ -1,0 +1,20 @@
+<div class="d-none d-sm-none d-xs-none d-md-block d-lg-block">
+  <div class="row">
+    <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
+      <h5>Sort By</h5>
+    </div>
+    <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3"
+      [ngClass]="orderByKey == 'price' && orderByOrder === true ? 'active' : ''"
+      (click)="setOrderByKeys('price', true)">
+      Price -- High Low</div>
+    <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3" (click)="setOrderByKeys('price', false)"
+      [ngClass]="orderByKey == 'price' && orderByOrder === false ? 'active' : ''">Price -- Low High</div>
+    <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3" (click)="setOrderByKeys('discount', false)" [ngClass]="
+  orderByKey == 'discount' && orderByOrder === false ? 'active' : ''
+">Discount</div>
+  </div>
+</div>
+<div class="d-block d-sm-block d-xs-block d-md-none d-lg-none">
+  <span class="glyphicon glyphicon-sort"></span>
+  <h5>Sort By</h5>
+</div>
